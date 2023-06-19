@@ -1,0 +1,161 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset0 Menlo-Bold;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red25\green25\blue25;\red255\green255\blue255;\red255\green255\blue254;
+\red144\green1\blue18;\red18\green112\blue68;\red217\green11\blue5;\red155\green44\blue3;\red252\green39\blue18;
+\red206\green59\blue5;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c12941\c12941\c12941;\cssrgb\c100000\c100000\c100000;\cssrgb\c100000\c100000\c99608;
+\cssrgb\c63922\c8235\c8235;\cssrgb\c3529\c50588\c33725;\cssrgb\c88946\c14202\c0;\cssrgb\c67803\c24280\c0;\cssrgb\c100000\c25271\c7591;
+\cssrgb\c85233\c31565\c0;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww15480\viewh12820\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs72 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Choosing model
+\f1\b\fs28 \
+\
+Linear Regression
+\f2\b0  results\
+-----------------------------
+\f3\fs24 \cf0 \cb1 \
+
+\f2\fs28 \cf2 \cb3 Scores:  [14076.76745223 14204.64609129 14163.11782684 13992.28364431\
+ 14065.35051426]\
+Mean:  
+\f1\b 14100.433105785865
+\f2\b0 \
+Standard deviation:  75.20223135462452\
+\
+
+\f1\b Ridge Regression
+\f2\b0  results\
+-----------------------------\
+Scores:  [14071.26142581 14206.57383195 14167.26167189 13991.09999181\
+ 14065.8743624 ]\
+Mean:  
+\f1\b 14100.414256771119
+\f2\b0 \
+Standard deviation:  77.11152014037043\
+\
+
+\f1\b Decision Tree Regressor
+\f2\b0  results\
+-----------------------------\
+Scores:  [13936.1293482  13959.65178574 13954.7339121  13968.66972475\
+ 13913.04253088 14006.01530571 13910.35600685 13738.38001306\
+ 13921.07365139 13809.39719373]\
+Mean:  
+\f1\b 13911.744947240702
+\f2\b0 \
+Standard deviation:  75.81961930561648\
+\
+
+\f1\b Elastic Net
+\f2\b0  results\
+ -----------------------------\
+Scores:  [18000.57752039 18051.13292172 18075.85389508 17862.16973872\
+ 17897.61612598]\
+Mean:  
+\f1\b 17977.470040377666
+\f2\b0 \
+Standard deviation:  84.0361419801873\
+\
+
+\f1\b Lasso Regression
+\f2\b0  results - 
+\f1\b Objective did not converge. You might want to increase the number of iterations.\
+
+\f2\b0  -----------------------------\
+Scores:  [14097.77780027 14236.00421576 14205.14912012 14028.15814868\
+ 14099.01333325]\
+Mean:  
+\f1\b 14133.220523614418
+\f2\b0 \
+Standard deviation:  76.42333610072549\
+\
+
+\f1\b Random Forest Regression (n_estimators=3)
+\f2\b0  results \
+ -----------------------------\
+Scores:  [11972.20032645 11992.27172742 12078.81968351 11836.13299589\
+ 11891.53026597]\
+Mean:  
+\f1\b 11954.190999848046
+\f2\b0 \
+Standard deviation:  83.8699544749972\
+\
+
+\f0\fs72 Tuning Model
+\f2\fs28 \
+\
+
+\f1\b Random Forest Regression GridSearch\
+
+\f2\b0 -----------------------------\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \cb4 \{\cf5 'n_estimators'\cf0 : [\cf6 5\cf0 , \cf6 10\cf0 , \cf6 15\cf0 ], \cf5 'max_features'\cf0 : [\cf6 10\cf0 , \cf6 15\cf0 ]\}\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf2 \cb3 \
+\{'max_features': 15, 'n_estimators': 15\}\
+\
+12280.265511955593 \{'max_features': 10, 'n_estimators': 5\}\
+11633.947083479274 \{'max_features': 10, 'n_estimators': 10\}\
+11449.565814192632 \{'max_features': 10, 'n_estimators': 15\}\
+12147.055170283971 \{'max_features': 15, 'n_estimators': 5\}\
+11550.363190431546 \{'max_features': 15, 'n_estimators': 10\}\
+\pard\pardeftab720\partightenfactor0
+\cf7 11348.174728111391\cf8  \{'max_features': 15, 'n_estimators': 15\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 -----------------------------\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \cb4 \{\cf5 'n_estimators'\cf0 : [\cf6 20\cf0 , \cf6 25\cf0 ], \cf5 'max_features'\cf0 : [\cf6 15\cf0 , \cf6 20\cf0 ]\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf2 \cb3 \{'max_features': 20, 'n_estimators': 25\}
+\f0 \cf0 \cb4 \
+\
+
+\f2 \cf2 \cb3 11250.612666271614 \{'max_features': 15, 'n_estimators': 20\}\
+11183.69205665952 \{'max_features': 15, 'n_estimators': 25\}\
+11206.700456257202 \{'max_features': 20, 'n_estimators': 20\}\
+\pard\pardeftab720\partightenfactor0
+\cf9 11118.403564251419\cf2  \cf10 \{'max_features': 20, 'n_estimators': 25\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 -----------------------------\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \cb4 \{\cf5 'n_estimators'\cf0 : [\cf6 30\cf0 , \cf6 40\cf0 ], \cf5 'max_features'\cf0 : [\cf6 20\cf0 , \cf6 25\cf0 ]\}\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf2 \cb3 \{'max_features': 25, 'n_estimators': 40\}
+\f0 \cf0 \cb1 \
+\
+
+\f2 \cf2 \cb3 11081.242059547085 \{'max_features': 20, 'n_estimators': 30\}\
+11012.064677368147 \{'max_features': 20, 'n_estimators': 40\}\
+11030.126743359431 \{'max_features': 25, 'n_estimators': 30\}\
+\pard\pardeftab720\partightenfactor0
+\cf7 10972.360385863236\cf2  \cf10 \{'max_features': 25, 'n_estimators': 40\}\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs72 \cf11 \
+Final Model 
+\fs28 \cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf2 \cb3 \
+RMSE: 
+\f1\b 10616.396631410178
+\f2\b0 \
+\
+95% confidence interval:\
+array([10516.63209905, 10715.23234298])\
+}
